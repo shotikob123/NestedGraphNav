@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ZurasApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kudi">აბა გაშალა ქუდი ფარშევანგმა?</string>
+    <string name="this_is_dota_fragment">THIS IS DOTA FRAGMENT</string>
+    <string name="this_is_csgo_fragment">THIS IS CSGO FRAGMENT</string>
+    <string name="kudi1">აბა გაშალა კუდი ფარშევანგმა?</string>
+    <string name="go_to_nested_navgraph">GO TO NESTED NAVGRAPH</string>
+    <string name="go_to_csgo_fragment">GO TO CSGO FRAGMENT</string>
+    <string name="go_to_dota_fragment">GO TO DOTA FRAGMENT</string>
+</resources>

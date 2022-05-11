@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_home"
+        android:id="@+id/homeFragment"
+        android:name="com.example.zurasapp.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_notification"
+        android:id="@+id/notificationFragment"
+        android:name="com.example.zurasapp.fragments.NotificationFragment"
+        android:label="NotificationFragment">
+        <argument android:name="age"
+        app:argType="integer"
+        android:defaultValue="-1"
+            />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_settings"
+        android:id="@+id/settingsFragment"
+        android:name="com.example.zurasapp.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/peacockFragment"
+        android:name="com.example.zurasapp.fragments.PeacockFragment"
+        android:label="fragment_peacock"
+        tools:layout="@layout/fragment_peacock">
+        <action
+            android:id="@+id/action_peacockFragment_to_nested_navgraph"
+            app:destination="@id/nested_navgraph" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="shotiko.com/home/" />
+    </fragment>
+    <include app:graph="@navigation/nested_navgraph" />
+</navigation>
